@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Medieval Overhaul</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+                <operations>
+                    
+                    <li Class="PatchOperationReplace">
+                        <xpath>/Defs/ThingDef[defName="DankPyon_DryingRack1x2c"]/comps/li[Class="rocessorFramework.CompProperties_Processor"]/parallelProcesses</xpath>
+                        <value>
+                            <parallelProcesses>true</parallelProcesses>
+                        </value>
+                    </li>
+                </operations>
+            </match>
+    </Operation>
+</Patch>

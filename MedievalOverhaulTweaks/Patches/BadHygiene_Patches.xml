@@ -4,33 +4,27 @@
         <mods>
             <li>Dubs Bad Hygiene</li>
         </mods>
-        <match Class="PatchOperationReplace">
-            <xpath>/Defs/ResearchProjectDef[defName="Irrigation"]/techLevel</xpath>
-            <value>
-                <techLevel>Medieval</techLevel>
-            </value>
-        </match>
-    </Operation>
 
-    <Operation Class="PatchOperationFindMod">
-        <mods>
-            <li>Medieval Overhaul</li>
-        </mods>
-        <match Class="PatchOperationFindMod">
-            <mods>
-                <li>Dubs Bad Hygiene</li>
-            </mods>
+        <match Class="PatchOperationSequence">
+            <success>Always</success>
 
-            <!-- Sprinklers -->
-            <match Class="PatchOperationReplace">
-                <xpath>/Defs/ThingDef[defName="IrrigationSprinkler"]/costList</xpath>
-                <value>
-                    <costList>
-                        <DankPyon_IronIngot>30</DankPyon_IronIngot>
-                        <DankPyon_ComponentBasic>1</DankPyon_ComponentBasic>
-                    </costList>
-                </value>
-            </match>
+            <operations>
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Medieval Overhaul</li>
+                    </mods>
+
+                    <match Class="PatchOperationReplace">
+                        <xpath>/Defs/ThingDef[defName="IrrigationSprinkler"]/costList</xpath>
+                        <value>
+                            <costList>
+                                <DankPyon_IronIngot>30</DankPyon_IronIngot>
+                                <DankPyon_ComponentBasic>1</DankPyon_ComponentBasic>
+                            </costList>
+                        </value>
+                    </match>
+                </li>
+            </operations>
         </match>
     </Operation>
 </Patch>

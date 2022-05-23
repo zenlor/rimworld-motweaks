@@ -16,6 +16,7 @@ https://github.com/zenlor/rimworld-motweaks Released under MIT license
     <li>Ludeon.RimWorld.Royalty</li>
     <li>Ludeon.RimWorld.Ideology</li>
     <li>OskarPotocki.VanillaFactionsExpanded.Core</li>
+    <li>imranfish.xmlextensions</li>
     <li>DankPyon.Medieval.Overhaul</li>
     <li>Dubwise.DubsBadHygiene</li>
     <li>Sierra.RF.Gemstones</li>
@@ -24,9 +25,14 @@ https://github.com/zenlor/rimworld-motweaks Released under MIT license
     <li>NunahurAlShamikh.MedP</li>
     <li>4loris4.MoreLinkables</li>
     <li>Owlchemist.Windows</li>
-		<li>Aoba.Fortress.Medieval.Material</li>
+    <li>Aoba.Fortress.Medieval.Material</li>
     <li>Orion.CashRegister</li>
+    <li>lc.simplelandfill</li>
+    <li>Neronix17.TweaksGalore</li>
   </loadAfter>
+  <loadBefore>
+    <li>Ogam.Rimedieval</li>
+  </loadBefore>
   <modDependencies>
     <li>
       <packageId>OskarPotocki.VanillaFactionsExpanded.Core</packageId>
