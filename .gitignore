@@ -1,0 +1,7 @@
+*/Source/*/.vs
+*/Source/*/bin
+*/Source/*/obj
+*/Source/*/MigrationBackup
+*/*/Assemblies/0Harmony.dll
+*/*/Assemblies/*.config
+*/*/Assemblies/*.pdb
