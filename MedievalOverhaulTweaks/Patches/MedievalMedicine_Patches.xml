@@ -10,7 +10,8 @@
             </mods>
 
             <match Class="PatchOperationSequence">
-                <!-- success>Always</success -->
+                <success>Always</success>
+				
                 <operations>
                     <!-- Adjust research -->
                     <li Class="PatchOperationReplace">

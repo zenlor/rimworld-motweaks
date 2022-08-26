@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Configuration>
+  <Excluded>
+    <exclude>Source\MOTweaks\bin</exclude>
+    <exclude>Source\MOTweaks\MigrationBackup</exclude>
+    <exclude>Source\MOTweaks\obj</exclude>
+    <exclude>Source\MOTweaks\.vs</exclude>
+  </Excluded>
+</Configuration>

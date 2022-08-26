@@ -9,7 +9,8 @@
                 <li>Medieval Prosthetics</li>
             </mods>
             <match Class="PatchOperationSequence">
-                <!-- success>Always</success -->
+                <success>Always</success>
+				
                 <operations>
                     <li Class="PatchOperationReplace">
                         <xpath>/Defs/ResearchProjectDef[defName="CrudeLimbs"]</xpath>
