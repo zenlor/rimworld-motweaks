@@ -16,7 +16,7 @@
             <value>
               <costList>
                 <WoodLog>80</WoodLog>
-                <DankPyon_Iron>20</DankPyon_Iron>
+                <DankPyon_IronIngot>20</DankPyon_IronIngot>
               </costList>
             </value>
           </li>
@@ -26,7 +26,7 @@
             <value>
               <costList>
                 <WoodLog>50</WoodLog>
-                <DankPyon_Iron>25</DankPyon_Iron>
+                <DankPyon_IronIngot>25</DankPyon_IronIngot>
               </costList>
             </value>
           </li>
@@ -36,18 +36,32 @@
             <value>
               <costList>
                 <WoodLog>150</WoodLog>
-                <DankPyon_Iron>50</DankPyon_Iron>
+                <DankPyon_IronIngot>50</DankPyon_IronIngot>
               </costList>
             </value>
           </li>
-          
+
           <li Class="PatchOperationReplace">
             <xpath>/Defs/ThingDef[defName="VFEC_Turret_Scorpion"]/costList</xpath>
             <value>
               <costList>
                 <WoodLog>70</WoodLog>
-                <DankPyon_Iron>25</DankPyon_Iron>
+                <DankPyon_IronIngot>25</DankPyon_IronIngot>
               </costList>
+            </value>
+          </li>
+
+          <li Class="PatchOperationReplace">
+            <xpath>/Defs/RecipeDef[defName="VFEC_Make_Bronze"]/ingredients/li/filter/thingDefs/li[text()="Steel"]</xpath>
+            <value>
+              <li>DankPyon_IronOre</li>
+            </value>
+          </li>
+
+          <li Class="PatchOperationReplace">
+            <xpath>/Defs/RecipeDef[defName="VFEC_Make_Bronze"]/fixedIngredientFilter/thingDefs/li[text()="Steel"]</xpath>
+            <value>
+              <li>DankPyon_IronOre</li>
             </value>
           </li>
 
@@ -56,4 +70,4 @@
     </match>
   </Operation>
 </Patch>
-      
+
