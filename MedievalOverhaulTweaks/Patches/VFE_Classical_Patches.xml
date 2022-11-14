@@ -36,7 +36,7 @@
             <value>
               <costList>
                 <WoodLog>150</WoodLog>
-                <DankPyon_IronIngot>50</DankPyon_IronIngot>
+                <VFEC_Bronze>50</VFEC_Bronze>
               </costList>
             </value>
           </li>
@@ -46,7 +46,7 @@
             <value>
               <costList>
                 <WoodLog>70</WoodLog>
-                <DankPyon_IronIngot>25</DankPyon_IronIngot>
+                <VFEC_Bronze>25</VFEC_Bronze>
               </costList>
             </value>
           </li>
