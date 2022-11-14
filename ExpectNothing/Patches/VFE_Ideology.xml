@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Vanilla Ideology Expanded - Memes and Structures</li>
+        </mods>
+
+        <match Class="PatchOperationRemove">
+            <success>Always</success>
+            <xpath>/Defs/PreceptDef[
+                        defName="IdeoRole_Moralist"
+                        or defName="IdeoRole_Leader"
+                        or defName="VME_IdeoRole_LeaderSecond"
+                        or defName="VME_IdeoRole_LeaderSecond"
+                        or defName="VME_IdeoRole_PartyHost"
+                        or defName="VME_IdeoRole_Nurse"
+                        or defName="VME_IdeoRole_Merchant"
+                        or defName="VME_IdeoRole_Mechacker"
+                        or defName="VME_IdeoRole_Fleshcrafter"
+                        or defName="VME_IdeoRole_InsectoidHerder"
+                        or defName="VME_IdeoRole_FireKeeper"
+                        or defName="VME_IdeoRole_Commissar"
+                        or defName="VME_IdeoRole_LeaderSecond"
+                        or defName="VME_IdeoRole_LeaderThird"
+                        or defName="VME_IdeoRole_Patissier"
+                        or defName="VFEP_IdeoRole_Captain"
+                        ]/expectationsOffset</xpath>
+        </match>
+    </Operation>
+</Patch>
