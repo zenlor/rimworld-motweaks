@@ -12,6 +12,7 @@
                 <li Class="PatchOperationFindMod">
                     <mods>
                         <li>Medieval Overhaul</li>
+                        <li>Medieval Overhaul (unofficial)</li>
                     </mods>
 
                     <match Class="PatchOperationReplace">

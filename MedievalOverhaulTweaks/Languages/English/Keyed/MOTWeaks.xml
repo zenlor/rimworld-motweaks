@@ -6,6 +6,9 @@
   <MOT_hygieneHeating_title>Medieval Central Heating</MOT_hygieneHeating_title>
   <MOT_hygieneHeating_desc>Move Dubs Bad Hygiene's Central Heating to the Medieval age.</MOT_hygieneHeating_desc>
   
+  <MOT_vfeClassicalIntegrations_title>VFE Classical Integrations</MOT_vfeClassicalIntegrations_title>
+  <MOT_vfeClassicalIntegrations_desc>Enable use of bronze from VFE Classical, bronze recipe is changed to require Medieval Overhaul Iron</MOT_vfeClassicalIntegrations_desc>
+  
   <MOT_rimFantasyWork_title>Gemstone mining work</MOT_rimFantasyWork_title>
   <MOT_rimFantasyWork_desc>Work needed to perform a single mining operation.</MOT_rimFantasyWork_desc>
   <MOT_rimFantasyProduct_title>Gemstone Results</MOT_rimFantasyProduct_title>

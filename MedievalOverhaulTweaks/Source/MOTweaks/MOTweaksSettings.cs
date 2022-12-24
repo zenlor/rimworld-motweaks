@@ -12,6 +12,7 @@ namespace MOTweaks
     {
         public bool hygieneIrrigation = true;
         public bool hygieneHeating = false;
+        public bool vfeClassicalIntegrations = true;
         public int rimFantasyWork = 2;
         public int rimFantasyProduct = 1800;
 
@@ -20,6 +21,7 @@ namespace MOTweaks
             base.ExposeData();
             Scribe_Values.Look<bool>(ref hygieneIrrigation, "hygieneIrrigation", true);
             Scribe_Values.Look<bool>(ref hygieneHeating, "hygieneHeating", false);
+            Scribe_Values.Look<bool>(ref vfeClassicalIntegrations, "vfeClassicalIntegrations", true);
             Scribe_Values.Look<int>(ref rimFantasyProduct, "rimFantasyProduct", 2);
             Scribe_Values.Look<int>(ref rimFantasyWork, "rimFantasyWork", 1800);
         }
@@ -44,6 +46,10 @@ namespace MOTweaks
 
                 l.CheckboxLabeled("MOT_hygieneIrrigation_title".Translate(), ref hygieneIrrigation, "MOT_hygieneIrrigation_desc".Translate());
                 l.CheckboxLabeled("MOT_hygieneHeating_title".Translate(), ref hygieneHeating, "MOT_hygieneHeating_desc".Translate());
+
+                l.GapLine(24);
+
+                l.CheckboxLabeled("MOT_vfeClassicalIntegrations_title".Translate(), ref vfeClassicalIntegrations, "MOT_vfeClassicalIntegrations_desc".Translate());
 
                 l.GapLine(24);
 
