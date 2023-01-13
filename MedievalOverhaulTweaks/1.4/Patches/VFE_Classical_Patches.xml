@@ -17,8 +17,7 @@
           <operations>
 
             <li Class="PatchOperationReplace">
-              <xpath>
-                /Defs/ThingDef[defName="VFEC_MeatDryingRack"]/costList</xpath>
+              <xpath>/Defs/ThingDef[defName="VFEC_MeatDryingRack"]/costList</xpath>
               <value>
                 <costList>
                   <WoodLog>80</WoodLog>
@@ -28,8 +27,7 @@
             </li>
 
             <li Class="PatchOperationReplace">
-              <xpath>
-                /Defs/ThingDef[defName="VFEC_CraftingBench"]/costList</xpath>
+              <xpath>/Defs/ThingDef[defName="VFEC_CraftingBench"]/costList</xpath>
               <value>
                 <costList>
                   <WoodLog>50</WoodLog>
@@ -39,8 +37,7 @@
             </li>
 
             <li Class="PatchOperationReplace">
-              <xpath>
-                /Defs/ThingDef[defName="VFEC_Beacon"]/costList</xpath>
+              <xpath>/Defs/ThingDef[defName="VFEC_Beacon"]/costList</xpath>
               <value>
                 <costList>
                   <WoodLog>150</WoodLog>
@@ -50,8 +47,7 @@
             </li>
 
             <li Class="PatchOperationReplace">
-              <xpath>
-                /Defs/ThingDef[defName="VFEC_Turret_Scorpion"]/costList</xpath>
+              <xpath>/Defs/ThingDef[defName="VFEC_Turret_Scorpion"]/costList</xpath>
               <value>
                 <costList>
                   <WoodLog>70</WoodLog>

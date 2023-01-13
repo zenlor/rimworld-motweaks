@@ -4,5 +4,6 @@
 */Source/*/MigrationBackup
 */*/Assemblies/0Harmony.dll
 */*/Assemblies/*.config
+*/*/Assemblies/*.pdb
 */*/Assemblies/*.pdbPerformance Fish
 *.code-workspace

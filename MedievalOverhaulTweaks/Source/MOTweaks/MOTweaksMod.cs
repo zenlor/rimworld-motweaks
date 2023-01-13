@@ -12,10 +12,12 @@ namespace MOTweaks
     {
         public const string ModName = "MOTweaks";
         public static MOTweaksSettings settings;
+        public static MOTweaksMod Instance;
 
         public MOTweaksMod(ModContentPack pack) : base(pack)
         {
             settings = GetSettings<MOTweaksSettings>();
+            Instance = this;
         }
 
         public override string SettingsCategory()

@@ -16,26 +16,29 @@ These patches use the xml patching system of Rimworld, it will add a few millise
 [h3]General Changes[/h3]
 
 [list]
-[*] Bows are not medieval technology (poor tribals!)
+[*] Simple Bows are now neolitic technology instead of medieval
 [*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=836308268]Dubs Bad Hygiene[/url] Irrigation is moved to medieval. Irrigation is a cornerstone of the medieval ages [i](*)[/i]
 [*] Early [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2109206579]Medieval Medicine[/url] is cheaper to research and it's moved to neolithic tech (in the end it's just a set of bandages and medical herbs) [i](*)[/i]
-[*] Early [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2101545242&searchtext=medieval]Medieval Prosthetics[/url] is cheaper to research, this is still tied to the medieval era.
+[*] Early [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2101545242]Medieval Prosthetics[/url] is cheaper to research, this is still tied to the medieval era.
+[*] Anvil can be used as smithy. Its finally possible to craft Crowns using medieval tools.
 [/list]
 
 [h3]Integration and patches[/h3]
 
 [list]
-[*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=836308268]Dubs Bad Hygiene[/url] Sprinklers use Basic Components
-[*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2630669656]RimFantasy Gemstones[/url] can be mined using a mineshaft with enought time
-[*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2451324814][noparse][SYR][/noparse] Trait Value[/url] integration for [i]Fighter[/i] and [i]Veteran[/i] traits
-[*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1103809207]More Linkables[/url] buildings can [i]link[/i] to [i]rustic[/i] medieval benches.
-[*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2506046833]Cash Register[/url] replace industrial components.
-[*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2501487160]Fortifications - Medieval - Material[/url] replace steel ingots with iron.
-[*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2571189146]Windows[/url] replace Steel ingots with Iron ingots, replace Plasteel with Steel ingots.
-[*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2271578989]Simple Landfill[/url] Soil Laying tech moved to Medieval, Moat tech moved to neolithic.
 [*] Rimworld Royalty [i]Piano[/i] tech moved to Medieval, only the Stellarch and his small court can appreciate the sounds of this device, only few in the world can build and accord such a contraption.
+[*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1103809207]More Linkables[/url] buildings can [i]link[/i] to [i]rustic[/i] medieval benches.
+[*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2271578989]Simple Landfill[/url] Soil Laying tech moved to Medieval, Moat tech moved to neolithic.
+[*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2451324814][noparse][SYR][/noparse] Trait Value[/url] integration for [i]Fighter[/i] and [i]Veteran[/i] traits
+[*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2501487160]Fortifications - Medieval - Material[/url] replace steel ingots with iron.
+[*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2506046833]Cash Register[/url] replace industrial components.
 [*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2553700067]Medieval Overhaul[/url] Gemstones are mineable using a MineShaft. Finding and polishing stones is a lengthy process.
-[*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2787850474]Vanilla Faction Expanded: Classical[/url] uses Bronze instead of Steel for most buildings. Bronze requires smelting Iron Ore (for a way to do it in the neolithic age try [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2327252470]Primitive Workbenches[/url])
+[*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2571189146]Windows[/url] replace Steel ingots with Iron ingots, replace Plasteel with Steel ingots.
+[*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2630669656]RimFantasy Gemstones[/url] can be mined using a mineshaft with enought time
+[*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2787850474]Vanilla Faction Expanded: Classical[/url] uses Bronze instead of Steel for most buildings. Bronze requires smelting Iron Ore (for a way to do it in the neolithic age try [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2327252470]Primitive Workbenches[/url]). This patch can be toggled.
+[*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=735241897]MendAndRecycle[/url] re-implement [url=https://steamcommunity.com/sharedfiles/filedetails/?id=]Mending Medieval[/url].
+[*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=836308268]Dubs Bad Hygiene[/url] Heating moved to Medieval. [i]Disabled by default[/i].
+[*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=836308268]Dubs Bad Hygiene[/url] Sprinklers use Basic Components
 [/list]
 
 [hr][/hr]

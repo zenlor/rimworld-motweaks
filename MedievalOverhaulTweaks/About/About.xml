@@ -31,6 +31,7 @@ https://github.com/zenlor/rimworld-motweaks Released under MIT license
     <li>Orion.CashRegister</li>
     <li>lc.simplelandfill</li>
     <li>Neronix17.TweaksGalore</li>
+    <li>notfood.mendandrecycle</li>
   </loadAfter>
   <loadBefore>
     <li>Ogam.Rimedieval</li>

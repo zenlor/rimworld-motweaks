@@ -16,4 +16,10 @@
   
   <MOT_defaultSettings>Reset to default</MOT_defaultSettings>
   <MOT_defaultSettings_tooltip>Reset all settings to default</MOT_defaultSettings_tooltip>
+  
+  <MOT_genericPatches_title>Generic patches (experimental)</MOT_genericPatches_title>
+  <MOT_genericPatches_desc>Experimental generic patches to patch more recipes using non-medieval technology.\n\nFor example: Industrial Components becomes Basic Components.</MOT_genericPatches_desc>
+  
+  <MOT_applyRestart_button>Apply and Restart</MOT_applyRestart_button>
+  <MOT_applyRestart_tooltip>Apply the new settings and restart Rimworld.\n\nWarning: This will restart Rimworld!</MOT_applyRestart_tooltip>
 </LanguageData>
