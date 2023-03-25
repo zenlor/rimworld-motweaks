@@ -1,8 +1,26 @@
 [h2]Small tweaks to Medieval Overhaul and related mods[/h2]
 
-[url=https://github.com/zenlor/rimworld-motweaks]Released under MIT license[/url]
+[url=https://github.com/litteram/rimworld-mods]Released under MIT license[/url]
 
-These patches use the xml patching system of Rimworld, it will add a few milliseconds to the loading time. The only hard requirement is [url=https://steamcommunity.com/workshop/filedetails/?id=2023507013]Vanilla Expanded Framework[/url] which does the heavy lifting for hard patches.
+A set of opinionated patches powered by [url=https://steamcommunity.com/workshop/filedetails/?id=2023507013]Vanilla
+Expanded Framework[/url] tailored for a medieval playthrough.
+
+The patch set should not send error messages, if there are errors or
+incompatibilities write in the comments or open a
+[url=https://github.com/litteram/rimworld-mods/issues]Github Issue[/url]
+
+[h2]Options[/h2]
+
+The newer version of this mod uses
+[url=https://steamcommunity.com/workshop/filedetails/?id=2023507013]Vanilla
+Expanded Framework[/url]
+[url=https://github.com/Vanilla-Expanded/VanillaExpandedFramework/wiki/Toggable-patches]Togglable
+Patches[/url]. Toggles for the patches can be found in the [b]Vanilla Framework
+Expanded[/b] mod menu, under [b]Toggable Patches[/b].
+
+[h2]List of changes[/h2]
+
+Note this is a list of all historical patches. For a list of active patches check VFE mod menu.
 
 [h3]Fixes[/h3]
 
@@ -16,7 +34,6 @@ These patches use the xml patching system of Rimworld, it will add a few millise
 [h3]General Changes[/h3]
 
 [list]
-[*] Simple Bows are now neolitic technology instead of medieval
 [*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=836308268]Dubs Bad Hygiene[/url] Irrigation is moved to medieval. Irrigation is a cornerstone of the medieval ages [i](*)[/i]
 [*] Early [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2109206579]Medieval Medicine[/url] is cheaper to research and it's moved to neolithic tech (in the end it's just a set of bandages and medical herbs) [i](*)[/i]
 [*] Early [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2101545242]Medieval Prosthetics[/url] is cheaper to research, this is still tied to the medieval era.
