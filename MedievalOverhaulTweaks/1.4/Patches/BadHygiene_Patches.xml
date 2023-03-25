@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <Operation Class="VFECore.PatchOperationToggableSequence">
+        <enabled>True</enabled>
+        <mods>
+            <li>Dubs Bad Hygiene</li>
+        </mods>
+        <label>Dubs Bad Hygiene medieval irrigation:</label>
+        <operations>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="Irrigation"]/techLevel</xpath>
+                <value>
+                    <techLevel>Medieval</techLevel>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+
+    <Operation Class="VFECore.PatchOperationToggableSequence">
+        <enabled>True</enabled>
+        <mods>
+            <li>Dubs Bad Hygiene</li>
+        </mods>
+        <label>Dubs Bad Hygiene medieval central heating:</label>
+        <operations>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="CentralHeating"]/techLevel</xpath>
+                <value>
+                    <techLevel>Medieval</techLevel>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+
+    <Operation Class="VFECore.PatchOperationToggableSequence">
+        <enabled>True</enabled>
+        <mods>
+            <li>Dubs Bad Hygiene</li>
+            <li>Medieval Overhaul</li>
+        </mods>
+        <label>Dubs Bad Hygiene &amp; Medieval Overhaul Irrigation Sprinkler recipe:</label>
+        <operations>
+
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef[defName="IrrigationSprinkler"]/costList</xpath>
+                <value>
+                    <costList>
+                        <DankPyon_IronIngot>30</DankPyon_IronIngot>
+                        <DankPyon_ComponentBasic>1</DankPyon_ComponentBasic>
+                    </costList>
+                </value>
+            </li>
+
+        </operations>
+    </Operation>
+</Patch>

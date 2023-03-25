@@ -1,56 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
-    <Operation Class="PatchOperationFindMod">
+    <Operation Class="VFECore.PatchOperationToggableSequence">
+        <enabled>True</enabled>
         <mods>
             <li>Medieval Overhaul</li>
-            <li>Medieval Overhaul (unofficial)</li>
+            <li>Medieval Lighting and Heat</li>
         </mods>
-        <match Class="PatchOperationFindMod">
-            <mods>
-                <li>Medieval Lighting and Heat</li>
-            </mods>
-            <match Class="PatchOperationSequence">
-                <operations>
+        <label>Medieval Lighting and Heat + Medieval Overhaul recipe:</label>
+        <operations>
 
-                    <Operation Class="PatchOperationAdd">
-                        <xpath>Defs/ThingDef[defName="MLH_Bonfire"]</xpath>
-                        <value>
-                            <stuffCategories>
-                                <li>DankPyon_RawWood</li>
-                                <li>Woody</li>
-                            </stuffCategories>
-                            <costStuffCount>20</costStuffCount>
-                        </value>
-                    </Operation>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="MLH_Bonfire"]</xpath>
+                <value>
+                    <stuffCategories>
+                        <li>DankPyon_RawWood</li>
+                        <li>Woody</li>
+                    </stuffCategories>
+                    <costStuffCount>20</costStuffCount>
+                </value>
+            </li>
 
-                    <Operation Class="PatchOperationRemove">
-                        <xpath>Defs/ThingDef[defName="MLH_Bonfire"]/constructEffect</xpath>
-                    </Operation>
+            <li Class="PatchOperationRemove">
+                <xpath>Defs/ThingDef[defName="MLH_Bonfire"]/constructEffect</xpath>
+            </li>
 
-                    <Operation Class="PatchOperationRemove">
-                        <xpath>Defs/ThingDef[defName="MLH_Bonfire"]/costList</xpath>
-                    </Operation>
+            <li Class="PatchOperationRemove">
+                <xpath>Defs/ThingDef[defName="MLH_Bonfire"]/costList</xpath>
+            </li>
 
-                    <Operation Class="PatchOperationRemove">
-                        <xpath>Defs/ThingDef[defName="MLH_Bonfire"]/uiIconPath</xpath>
-                    </Operation>
+            <li Class="PatchOperationRemove">
+                <xpath>Defs/ThingDef[defName="MLH_Bonfire"]/uiIconPath</xpath>
+            </li>
 
-                </operations>
-            </match>
-        </match>
-        <!-- 
-        <match Class="PatchOperationSequence">
-            <operations>
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef[defName="CampFire"]/costList</xpath>
-                    <value>
-                        <costList>
-                            <DankPyon_RawWood>30</DankPyon_RawWood>
-                        </costList>
-                    </value>
-                </li>
-            </operations>
-        </match>
-    -->
+        </operations>
     </Operation>
 </Patch>

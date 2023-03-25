@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <Operation Class="VFECore.PatchOperationToggableSequence">
+        <enabled>True</enabled>
+        <mods>
+            <li>Adobe Abode</li>
+            <li>Medieval Overhaul</li>
+        </mods>
+        <label>Adobe Abode &amp; Medieval Overhaul integration:</label>
+        <operations>
+
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef[defName="JKN_AdobeMixingTable"]/costList</xpath>
+                <value>
+                    <costList>
+                        <DankPyon_IronIngot>5</DankPyon_IronIngot>
+                        <DankPyon_ComponentBasic>1</DankPyon_ComponentBasic>
+                    </costList>
+                </value>
+            </li>
+
+            <li Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="JKN_AdobeMixingTable"]/stuffCategories</xpath>
+                <value>
+                    <li>DankPyon_RawWood</li>
+                </value>
+            </li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef[defName="JKN_AdobeBakingFrame"]/costList</xpath>
+                <value>
+                    <costList>
+                        <DankPyon_RawWood>15</DankPyon_RawWood>
+                    </costList>
+                </value>
+            </li>
+
+        </operations>
+    </Operation>
+</Patch>
