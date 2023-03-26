@@ -2,21 +2,14 @@
 
 [url=https://github.com/litteram/rimworld-mods]Released under MIT license[/url]
 
-A set of opinionated patches powered by [url=https://steamcommunity.com/workshop/filedetails/?id=2023507013]Vanilla
-Expanded Framework[/url] tailored for a medieval playthrough.
+A set of opinionated patches powered by [url=https://steamcommunity.com/workshop/filedetails/?id=2023507013]Vanilla Expanded Framework[/url] tailored for a medieval playthrough.
 
-The patch set should not send error messages, if there are errors or
-incompatibilities write in the comments or open a
-[url=https://github.com/litteram/rimworld-mods/issues]Github Issue[/url]
+The patch set should not send error messages, if there are errors or incompatibilities write in the comments or [b]open a [url=https://github.com/litteram/rimworld-mods/issues]Github Issue[/url][/b]
+
 
 [h2]Options[/h2]
 
-The newer version of this mod uses
-[url=https://steamcommunity.com/workshop/filedetails/?id=2023507013]Vanilla
-Expanded Framework[/url]
-[url=https://github.com/Vanilla-Expanded/VanillaExpandedFramework/wiki/Toggable-patches]Togglable
-Patches[/url]. Toggles for the patches can be found in the [b]Vanilla Framework
-Expanded[/b] mod menu, under [b]Toggable Patches[/b].
+The newer version of this mod uses [url=https://steamcommunity.com/workshop/filedetails/?id=2023507013]Vanilla Expanded Framework[/url] [url=https://github.com/Vanilla-Expanded/VanillaExpandedFramework/wiki/Toggable-patches]Togglable Patches[/url]. Toggles for the patches can be found in the [b]Vanilla Framework Expanded[/b] mod menu, under [b]Toggable Patches[/b].
 
 [h2]List of changes[/h2]
 
@@ -56,6 +49,8 @@ Note this is a list of all historical patches. For a list of active patches chec
 [*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=735241897]MendAndRecycle[/url] re-implement [url=https://steamcommunity.com/sharedfiles/filedetails/?id=]Mending Medieval[/url].
 [*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=836308268]Dubs Bad Hygiene[/url] Heating moved to Medieval. [i]Disabled by default[/i].
 [*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=836308268]Dubs Bad Hygiene[/url] Sprinklers use Basic Components
+[*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2896217209]Adobe Abode[/url] recipe patches.
+[*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2079862064]Simple Recycling[/url] research patch.
 [/list]
 
 [hr][/hr]

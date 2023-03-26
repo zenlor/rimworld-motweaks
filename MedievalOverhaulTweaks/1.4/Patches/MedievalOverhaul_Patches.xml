@@ -1,24 +1,121 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
-
-    <Operation Class="PatchOperationFindMod">
+    <Operation Class="VFECore.PatchOperationToggableSequence">
+        <enabled>True</enabled>
         <mods>
             <li>Medieval Overhaul</li>
-            <li>Medieval Overhaul (unofficial)</li>
         </mods>
-        <!-- 
-        <match Class="PatchOperationSequence">
-            <operations>
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef[defName="CampFire"]/costList</xpath>
-                    <value>
-                        <costList>
-                            <DankPyon_RawWood>30</DankPyon_RawWood>
-                        </costList>
-                    </value>
-                </li>
-            </operations>
-        </match>
-    -->
+        <label>Medieval Overhaul Workbench integration:</label>
+        <operations>
+            <li Class="PatchOperationAddModExtension">
+                <xpath>/Defs/ThingDef[defName="DankPyon_Workbench"]</xpath>
+                <value>
+                    <li Class="RecipeInheritance.ThingDefExtension">
+                        <inheritRecipesFrom>
+                            <li>CraftingSpot</li>
+                        </inheritRecipesFrom>
+                    </li>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+
+    <Operation Class="VFECore.PatchOperationToggableSequence">
+        <enabled>True</enabled>
+        <mods>
+            <li>Medieval Overhaul</li>
+        </mods>
+        <label>Medieval Overhaul electric stove integrations:</label>
+        <operations>
+
+            <li Class="PatchOperationAddModExtension">
+                <xpath>/Defs/ThingDef[defName="DankPyon_RusticCookingTable"]</xpath>
+                <value>
+                    <li Class="RecipeInheritance.ThingDefExtension">
+                        <inheritRecipesFrom>
+                            <li>ElectricStove</li>
+                        </inheritRecipesFrom>
+                    </li>
+                </value>
+            </li>
+
+        </operations>
+    </Operation>
+
+    <Operation Class="VFECore.PatchOperationToggableSequence">
+        <enabled>True</enabled>
+        <mods>
+            <li>Medieval Overhaul</li>
+        </mods>
+        <label>Medieval Overhaul electric smithy integrations:</label>
+        <operations>
+
+            <li Class="PatchOperationAddModExtension">
+                <xpath>/Defs/ThingDef[defName="DankPyon_Anvil"]</xpath>
+                <value>
+                    <li Class="RecipeInheritance.ThingDefExtension">
+                        <inheritRecipesFrom>
+                            <li>FueledSmithy</li>
+                        </inheritRecipesFrom>
+                    </li>
+                </value>
+            </li>
+
+            <li Class="PatchOperationAddModExtension">
+                <xpath>/Defs/ThingDef[defName="DankPyon_Anvil"]</xpath>
+                <value>
+                    <li Class="RecipeInheritance.ThingDefExtension">
+                        <inheritRecipesFrom>
+                            <li>ElectricSmithy</li>
+                        </inheritRecipesFrom>
+                    </li>
+                </value>
+            </li>
+
+            <li Class="PatchOperationAddModExtension">
+                <xpath>/Defs/ThingDef[defName="DankPyon_Anvil"]</xpath>
+                <value>
+                    <li Class="RecipeInheritance.ThingDefExtension">
+                        <inheritRecipesFrom>
+                            <li>MachiningTable</li>
+                        </inheritRecipesFrom>
+                    </li>
+                </value>
+            </li>
+
+        </operations>
+    </Operation>
+
+    <Operation Class="VFECore.PatchOperationToggableSequence">
+        <enabled>True</enabled>
+        <mods>
+            <li>Medieval Overhaul</li>
+        </mods>
+        <label>Medieval Overhaul electric tailoring bench integrations:</label>
+        <operations>
+
+            <li Class="PatchOperationAddModExtension">
+                <xpath>/Defs/ThingDef[defName="DankPyon_TailorsBench"]</xpath>
+                <value>
+                    <li Class="RecipeInheritance.ThingDefExtension">
+                        <inheritRecipesFrom>
+                            <li>HandTailoringBench</li>
+                        </inheritRecipesFrom>
+                    </li>
+                </value>
+            </li>
+
+            <li Class="PatchOperationAddModExtension">
+                <xpath>/Defs/ThingDef[defName="DankPyon_TailorsBench"]</xpath>
+                <value>
+                    <li Class="RecipeInheritance.ThingDefExtension">
+                        <inheritRecipesFrom>
+                            <li>ElectricTailoringBench</li>
+                        </inheritRecipesFrom>
+                    </li>
+                </value>
+            </li>
+
+        </operations>
     </Operation>
 </Patch>
