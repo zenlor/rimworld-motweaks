@@ -77,7 +77,7 @@
                 <value>
                     <li Class="RecipeInheritance.ThingDefExtension">
                         <inheritRecipesFrom>
-                            <li>MachiningTable</li>
+                            <li>TableMachining</li>
                         </inheritRecipesFrom>
                     </li>
                 </value>

@@ -13,8 +13,7 @@
                 <xpath>/Defs/ThingDef[defName="JKN_AdobeMixingTable"]/costList</xpath>
                 <value>
                     <costList>
-                        <DankPyon_IronIngot>5</DankPyon_IronIngot>
-                        <DankPyon_ComponentBasic>1</DankPyon_ComponentBasic>
+                        <WoodLog>25</WoodLog>
                     </costList>
                 </value>
             </li>
@@ -30,7 +29,7 @@
                 <xpath>/Defs/ThingDef[defName="JKN_AdobeBakingFrame"]/costList</xpath>
                 <value>
                     <costList>
-                        <DankPyon_RawWood>15</DankPyon_RawWood>
+                        <WoodLog>15</WoodLog>
                     </costList>
                 </value>
             </li>
