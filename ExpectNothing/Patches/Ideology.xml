@@ -5,7 +5,8 @@
             <li>Ideology</li>
         </mods>
         <match Class="PatchOperationRemove">
-            <xpath>/Defs/PreceptDef[defName="IdeoRole_Moralist" or defName="IdeoRole_Leader"]/expectationsOffset</xpath>
+            <xpath>/Defs/PreceptDef[defName="IdeoRole_Moralist" or
+                                    defName="IdeoRole_Leader"]/expectationsOffset</xpath>
         </match>
     </Operation>
 </Patch>

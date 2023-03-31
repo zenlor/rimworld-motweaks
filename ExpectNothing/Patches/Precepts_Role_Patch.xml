@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<!-- Dangerous catch-all patch -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/PreceptDef/roleDisabledWorkTags</xpath>
+		<value>
+			<roleDisabledWorkTags></roleDisabledWorkTags>
+		</value>
+	</Operation>
+</Patch>

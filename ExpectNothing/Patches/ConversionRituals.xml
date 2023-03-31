@@ -1,0 +1,22 @@
+<Patch>
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/AbilityDef[defName="Convert"]/comps/li[@Class="CompProperties_AbilityConvert"]/convertPowerFactor</xpath>
+        <value>
+            <convertPowerFactor>4</convertPowerFactor>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/AbilityDef[defName="Reassure"]/comps/li[@Class="CompProperties_AbilityReassure"]/baseCertaintyGain</xpath>
+        <value>
+            <baseCertaintyGain>0.4</baseCertaintyGain>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/AbilityDef[defName="ConversionRitual"]/cooldownTicksRange</xpath>
+        <value>
+            <cooldownTicksRange>320000</cooldownTicksRange>
+        </value>
+    </Operation>
+</Patch>
