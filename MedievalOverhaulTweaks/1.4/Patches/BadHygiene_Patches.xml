@@ -50,6 +50,16 @@
                 </value>
             </li>
 
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="Thermostat"]/costList</xpath>
+                <value>
+                    <costList>
+                        <Steel>10</Steel>
+                        <DankPyon_ComponentBasic>2</DankPyon_ComponentBasic>
+                    </costList>
+                </value>
+            </li>
+
             <li Class="PatchOperationAdd">
                 <xpath>Defs/ThingDef[defName="ElectricBoiler" or defName="SolarHeater"]/researchPrerequisites</xpath>
                 <value>
