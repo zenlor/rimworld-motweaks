@@ -29,6 +29,33 @@
                     <techLevel>Medieval</techLevel>
                 </value>
             </li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="CentralHeating"]/prerequisites</xpath>
+                <value>
+                    <prerequisites>
+                        <li>LogBoilers</li>
+                        <li>Plumbing</li>
+                    </prerequisites>
+                </value>
+            </li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="GasBoiler"]/costList</xpath>
+                <value>
+                    <costList>
+                        <Steel>80</Steel>
+                        <DankPyon_ComponentBasic>3</DankPyon_ComponentBasic>
+                    </costList>
+                </value>
+            </li>
+
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="ElectricBoiler" or defName="SolarHeater"]/researchPrerequisites</xpath>
+                <value>
+                    <li>Electricity</li>
+                </value>
+            </li>
         </operations>
     </Operation>
 
