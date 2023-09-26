@@ -7,3 +7,7 @@
 */*/Assemblies/*.pdb
 */*/Assemblies/*.pdbPerformance Fish
 *.code-workspace
+/OrganizedResearchTab/
+/MoreAutosaveSlots/
+/DuckInsaneSkills/
+/SavegameCompressor/
