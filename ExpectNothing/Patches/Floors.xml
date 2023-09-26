@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/TerrainDef[@Name="FloorBase" or
+								@Name="OutlandFloorBase" or
+								@Name="TFloorBaseWood" or
+								@Name="TFloorBaseCarpet" or
+								@Name="TFloorBaseStone"
+								]/statBases</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/TerrainDef[@Name="FloorBase" or
+									@Name="OutlandFloorBase" or
+									@Name="TFloorBaseWood" or
+									@Name="TFloorBaseCarpet" or
+									@Name="TFloorBaseStone"]</xpath>
+			<value>
+				<statBases/>
+			</value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/TerrainDef[@Name="FloorBase" or
+								@Name="OutlandFloorBase" or
+								@Name="TFloorBaseWood" or
+								@Name="TFloorBaseCarpet" or
+								@Name="TFloorBaseStone"]/statBases</xpath>
+		<value>
+			<MarketValue>0.01</MarketValue>
+		</value>
+	</Operation>
+</Patch>
