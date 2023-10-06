@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="ShelfBase" Name="ZLPalletBase" Abstract="True">
+    <thingClass>Building_Storage</thingClass>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>0.4</fillPercent>
+    <pathCost>50</pathCost>
+
+    <castEdgeShadows>true</castEdgeShadows>
+    <staticSunShadowHeight>0.1</staticSunShadowHeight>
+
+    <defaultPlacingRot>North</defaultPlacingRot>
+    <rotatable>false</rotatable>
+
+    <statBases>
+      <Flammability>1.0</Flammability>
+      <Beauty>-0.5</Beauty>
+    </statBases>
+
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+
+
+    <graphicData Inherit="False">
+      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Things/Building/Furniture/Storage/PalletSmall</texPath>
+    </graphicData>
+
+    <building>
+      <paintable>true</paintable>
+      <isInert>true</isInert>
+
+      <maxItemsInCell>6</maxItemsInCell>
+
+      <preventDeteriorationOnTop>false</preventDeteriorationOnTop>
+      <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+
+      <fixedStorageSettings Inherit="False">
+        <filter>
+          <disallowNotEverStorable>true</disallowNotEverStorable>
+
+          <categories>
+            <li>Root</li>
+          </categories>
+
+          <thingDefs>
+            <li MayRequire="Ludeon.RimWorld.Biotech">Wastepack</li>
+            <li MayRequire="Dubwise.DubsBadHygiene">Biosolids</li>
+          </thingDefs>
+
+        </filter>
+      </fixedStorageSettings>
+
+      <defaultStorageSettings Inherit="False">
+        <priority>Normal</priority>
+        <filter>
+          <categories>
+            <li>Manufactured</li>
+            <li>ResourcesRaw</li>
+            <li>Items</li>
+            <li>BodyParts</li>
+            <li>Chunks</li>
+            <li MayRequire="Ludeon.RimWorld.Biotech">Wastepacks</li>
+            <li MayRequire="Dubwise.DubsBadHygiene">Biosolids</li>
+          </categories>
+        </filter>
+      </defaultStorageSettings>
+    </building>
+
+    <inspectorTabs>
+      <li>ITab_Storage</li>
+    </inspectorTabs>
+
+    <surfaceType>Item</surfaceType>
+    <canOverlapZones>false</canOverlapZones>
+
+    <comps Inherit="False">
+    </comps>
+
+  </ThingDef>
+
+  <ThingDef ParentName="ZLPalletBase">
+    <defName>ZLPalletSmall</defName>
+    <label>small pallet</label>
+    <description>A pallet to store heavy things.</description>
+    <graphicData Inherit="False">
+      <texPath>Things/Building/Furniture/Storage/PalletSmall</texPath>
+      <drawSize>(1.5,1.5)</drawSize>
+      <graphicClass>Graphic_Multi</graphicClass>
+    </graphicData>
+    <costStuffCount>10</costStuffCount>
+    <statBases>
+      <MaxHitPoints>20</MaxHitPoints>
+      <Mass>30</Mass>
+      <WorkToBuild>1000</WorkToBuild>
+    </statBases>
+    <size>(1,1)</size>
+  </ThingDef>
+
+  <ThingDef ParentName="ZLPalletBase">
+    <defName>ZLPalletMedium</defName>
+    <label>medium pallet</label>
+    <rotatable>true</rotatable>
+    <description>A pallet to store heavy things.</description>
+    <graphicData Inherit="False">
+      <texPath>Things/Building/Furniture/Storage/PalletMedium</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <costStuffCount>20</costStuffCount>
+    <statBases>
+      <MaxHitPoints>40</MaxHitPoints>
+      <Mass>40</Mass>
+      <WorkToBuild>1000</WorkToBuild>
+    </statBases>
+    <size>(2,1)</size>
+  </ThingDef>
+
+
+  <ThingDef ParentName="ZLPalletBase">
+    <defName>ZLPalletLarge</defName>
+    <label>large pallet</label>
+    <description>A pallet to store heavy things.</description>
+    <graphicData Inherit="False">
+      <texPath>Things/Building/Furniture/Storage/PalletLarge</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <costStuffCount>30</costStuffCount>
+    <statBases>
+      <MaxHitPoints>60</MaxHitPoints>
+      <Mass>60</Mass>
+      <WorkToBuild>1000</WorkToBuild>
+    </statBases>
+    <size>(2,2)</size>
+    <building>
+      <maxItemsInCell>8</maxItemsInCell>
+    </building>
+  </ThingDef>
+</Defs>
