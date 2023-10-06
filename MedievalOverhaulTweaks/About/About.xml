@@ -33,6 +33,7 @@ https://github.com/zenlor/rimworld-motweaks Released under MIT license
     <li>Neronix17.TweaksGalore</li>
     <li>notfood.mendandrecycle</li>
     <li>JKN.AdobeAbode</li>
+    <li>zal.advanceddeepdrill</li>
   </loadAfter>
   <loadBefore>
     <li>Ogam.Rimedieval</li>
