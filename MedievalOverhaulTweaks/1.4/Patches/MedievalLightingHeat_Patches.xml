@@ -6,7 +6,7 @@
             <li>Medieval Overhaul</li>
             <li>Medieval Lighting and Heat</li>
         </mods>
-        <label>Medieval Lighting and Heat + Medieval Overhaul recipe:</label>
+        <label>Medieval Lighting and Heat, MO recipes:</label>
         <operations>
 
             <li Class="PatchOperationAdd">

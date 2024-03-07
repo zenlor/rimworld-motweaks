@@ -205,4 +205,18 @@
 
         </operations>
     </Operation>
+
+    <Operation Class="VFECore.PatchOperationToggableSequence">
+        <enabled>False</enabled>
+        <mods>
+            <li>Medieval Overhaul</li>
+        </mods>
+        <label>Medieval Overhaul custom scenarios:</label>
+        <operations>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ScenarioDef/scenario/parts/li[thingDef="WoodLog"]/thingDef</xpath>
+				<value><thingDef>DankPyon_RawWood</thingDef></value>
+			</li>
+        </operations>
+    </Operation>
 </Patch>
