@@ -35,6 +35,8 @@ https://github.com/zenlor/rimworld-motweaks Released under MIT license
     <li>notfood.mendandrecycle</li>
     <li>JKN.AdobeAbode</li>
     <li>zal.advanceddeepdrill</li>
+    <li>sugarstar.wheelchairs</li>
+    <li>pearasect.wheelchairs</li>
   </loadAfter>
   <loadBefore>
     <li>Ogam.Rimedieval</li>

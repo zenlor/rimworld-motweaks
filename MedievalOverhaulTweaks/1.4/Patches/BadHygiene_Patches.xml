@@ -17,7 +17,7 @@
     </Operation>
 
     <Operation Class="VFECore.PatchOperationToggableSequence">
-        <enabled>True</enabled>
+        <enabled>False</enabled>
         <mods>
             <li>Dubs Bad Hygiene</li>
         </mods>

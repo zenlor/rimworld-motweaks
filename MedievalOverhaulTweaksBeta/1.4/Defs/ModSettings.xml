@@ -8,14 +8,13 @@
 
       <!-- Generic Patches {{{ -->
       <li Class="XmlExtensions.Setting.Gap" />
+      <li Class="XmlExtensions.Setting.Text">
+        <text>Generic Medieval mod patches</text>
+        <font>Medium</font>
+        <anchor>Middle</anchor>
+      </li>
       <li Class="XmlExtensions.Setting.Section">
         <settings>
-          <li Class="XmlExtensions.Setting.Text">
-            <text>Generic Medieval mod patches</text>
-            <font>Medium</font>
-            <anchor>Middle</anchor>
-          </li>
-          <li Class="XmlExtensions.Setting.GapLine"/>
 
           <li Class="XmlExtensions.Setting.Checkbox">
             <label>Royalty</label>
@@ -28,18 +27,19 @@
       </li>
       <!-- }}} -->
 
-      <li Class="XmlExtensions.Setting.Gap" />
       <!-- Medieval Overhaul Tweaks {{{ -->
+      <li Class="XmlExtensions.Setting.Gap" />
+      <li Class="XmlExtensions.Setting.SetColor"><color>(79,204,62)</color></li>
+      <li Class="XmlExtensions.Setting.Text">
+        <text>Medieval Overhaul Tweaks</text>
+        <font>Medium</font>
+        <anchor>Middle</anchor>
+        </li>
+      <li Class="XmlExtensions.Setting.SetColor" />
+      <li Class="XmlExtensions.Setting.Gap"/>
+
       <li Class="XmlExtensions.Setting.Section">
         <settings>
-          <li Class="XmlExtensions.Setting.SetColor"><color>(130,0,230)</color></li>
-          <li Class="XmlExtensions.Setting.Text">
-            <text>Medieval Overhaul Tweaks</text>
-            <font>Medium</font>
-            <anchor>Middle</anchor>
-          </li>
-          <li Class="XmlExtensions.Setting.SetColor" />
-          <li Class="XmlExtensions.Setting.GapLine"/>
 
           <li Class="XmlExtensions.Setting.Text">
             <text>recipe fixes</text>
@@ -156,7 +156,7 @@
 
       <!-- Medieval Overhaul Tweaks {{{ -->
       <li Class="XmlExtensions.Setting.Gap" />
-      <li Class="XmlExtensions.Setting.SetColor"><color>(230,0,130)</color></li>
+      <li Class="XmlExtensions.Setting.SetColor"><color>(79,204,62)</color></li>
       <li Class="XmlExtensions.Setting.Text">
         <text>Medieval Overhaul Integrations</text>
         <font>Medium</font>
@@ -333,9 +333,8 @@
             <defaultValue>True</defaultValue>
             <tooltip>GarlicSauce's Advanced Deep Drill (Continued) integration with new recipes for Silver Ore, Gold Ore and Iron Ore instead of finished ingots.</tooltip>
           </li>
-        </settings>
 
-        <li Class="XmlExtensions.Setting.GapLine"/>
+        </settings>
       </li>
 
     </settings>
