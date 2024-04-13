@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Anomaly Hotfixes</name>
+  <author>Zenlor</author>
+  <packageId>zenlor.anomalyHotfixes</packageId>
+  <description><![CDATA[
+    Anomaly mod-interactions hotfixes:
+
+    - Ghoul melee skills
+    ]]></description>
+  <supportedVersions>
+    <li>1.5</li>
+  </supportedVersions>
+  <url>https://github.com/litteram/rimworld-mods</url>
+  <loadAfter>
+    <li>UnlimitedHugs.AllowTool</li>
+  </loadAfter>
+  <modDependencies></modDependencies>
+  </ModMetaData>
