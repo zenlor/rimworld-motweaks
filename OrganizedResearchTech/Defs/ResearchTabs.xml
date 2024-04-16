@@ -13,6 +13,14 @@
     <label>Industrial</label>
   </ResearchTabDef>
   <ResearchTabDef>
+    <defName>SRT_IndustrialResearchI</defName>
+    <label>Hi-Tech</label>
+  </ResearchTabDef>
+  <ResearchTabDef>
+    <defName>SRT_IndustrialResearchII</defName>
+    <label>Silicon</label>
+  </ResearchTabDef>
+  <ResearchTabDef>
     <defName>SRT_SpacerResearch</defName>
     <label>Spacer</label>
   </ResearchTabDef>

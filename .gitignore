@@ -1,18 +1,1 @@
-*/Source/*/.vs
-*/Source/*/bin
-*/Source/*/obj
-*/Source/*/MigrationBackup
-*/*/Assemblies/0Harmony.dll
-*/*/Assemblies/*.config
-*/*/Assemblies/*.pdb
-*/*/Assemblies/*.pdbPerformance Fish
-*.code-workspace
-
-/OrganizedResearchTab/
-/MoreAutosaveSlots/
-/DuckInsaneSkills/
-/SavegameCompressor/
-/FasterGameLoading/
-/Performance-Fish/
-/Fishery/
-/VehicleFramework/
+Place mods here.txt
