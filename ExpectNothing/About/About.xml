@@ -4,29 +4,36 @@
   <author>Zenlor</author>
   <packageId>zenlor.thepatchisalie</packageId>
   <description><![CDATA[
-      Configurable patches for:
+    Configurable patches for:
 
-      - Core
-      - Ideology
-      - Royalty
-      - Anomaly
-      - Mods
+    - Core
+    - Ideology
+    - Royalty
+    - Anomaly
+    - Vanilla Expanded Expansions mods
+
     ]]></description>
   <supportedVersions>
     <li>1.5</li>
-    </supportedVersions>
+  </supportedVersions>
   <url>https://steamcommunity.com/sharedfiles/filedetails/?id=725130005</url>
   <loadAfter>
     <li>VanillaExpanded.VMemesE</li>
+    <li>OskarPotocki.VanillaFactionsExpanded.Core</li>
     <li>OskarPotocki.VFE.Tribals</li>
+    <li>OskarPotocki.VWEMS</li>
+    <li>vanillaexpanded.vfepropsanddecor</li>
+    <li>vanillaexpanded.vcef</li>
+    <li>vanillaexpanded.vchemfuele</li>
+    <li>regrowth.botr.core</li>
     <li>imranfish.xmlextensions</li>
-    </loadAfter>
+  </loadAfter>
   <modDependencies>
     <li>
       <packageId>imranfish.xmlextensions</packageId>
       <displayName>XML Extensions</displayName>
       <downloadUrl>https://github.com/15adhami/XmlExtensions/releases</downloadUrl>
       <steamWorkshopUrl>steam://url/CommunityFilePage/2574315206</steamWorkshopUrl>
-      </li>
-    </modDependencies>
-  </ModMetaData>
+    </li>
+  </modDependencies>
+</ModMetaData>

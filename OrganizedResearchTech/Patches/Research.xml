@@ -3,6 +3,7 @@
   <Operation Class="PatchOperationSequence">
     <operations>
 
+      <!-- add everything without techLevel to tab Main -->
       <li Class="PatchOperationAdd">
         <xpath>Defs/ResearchProjectDef[
         not(techLevel)
@@ -78,6 +79,8 @@
       <li Class="PatchOperationSequence">
         <!-- <success>Always</success> -->
         <operations>
+
+          <!-- Remove Tabs -->
           <li Class="PatchOperationConditional">
             <xpath>Defs/ResearchProjectDef[
             techLevel="Industrial"
@@ -89,6 +92,22 @@
               and not(tab="Anomaly")
                 ]/tab</xpath>
             </match>
+          </li>
+
+          <!-- move Microelectronics to Hi-Tech (should help with the layout) -->
+          <li Class="PatchOperationAdd">
+            <xpath>Defs/ResearchProjectDef[defName="MicroelectronicsBasics"]</xpath>
+            <value>
+              <tab>SRT_IndustrialResearchI</tab>
+            </value>
+          </li>
+
+          <!-- move MultiAnalyzer to Silicon (should help with the layout) -->
+          <li Class="PatchOperationAdd">
+            <xpath>Defs/ResearchProjectDef[defName="MultiAnalyzer"]</xpath>
+            <value>
+              <tab>SRT_IndustrialResearchII</tab>
+            </value>
           </li>
 
           <li Class="PatchOperationAdd">
@@ -116,8 +135,8 @@
           <li Class="PatchOperationAdd">
             <xpath>Defs/ResearchProjectDef[
             techLevel="Industrial"
-            and not(tab)
             and not(tab="Anomaly")
+            and not(tab)
               ]</xpath>
             <value>
               <tab>SRT_IndustrialResearch</tab>
@@ -245,6 +264,8 @@
                 <SRT_NeolithicResearch />
                 <SRT_MedievalResearch />
                 <SRT_IndustrialResearch />
+                <SRT_IndustrialResearchI />
+                <SRT_IndustrialResearchII />
                 <SRT_SpacerResearch />
                 <SRT_UltraResearch />
               </tabs>

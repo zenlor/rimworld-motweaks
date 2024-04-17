@@ -52,15 +52,6 @@
                         <li Class="XmlExtensions.Setting.Text">
                             <text>Pawn Expectations</text>
                         </li>
-
-                        <li Class="XmlExtensions.Setting.Checkbox">
-                            <label></label>
-                            <key></key>
-                        </li>
-
-                        <li Class="XmlExtensions.Settings.Checkbox">
-                            <label></label>
-                        </li>
                     </settings>
                 </li>
 

@@ -16,5 +16,14 @@ Split research by tech level.
   </supportedVersions>
   <loadAfter>
     <li>Mlie.OrganizedResearchTab</li>
+    <li>VanillaExpanded.VMemesE</li>
+    <li>OskarPotocki.VanillaFactionsExpanded.Core</li>
+    <li>OskarPotocki.VFE.Tribals</li>
+    <li>OskarPotocki.VWEMS</li>
+    <li>vanillaexpanded.vfepropsanddecor</li>
+    <li>vanillaexpanded.vcef</li>
+    <li>vanillaexpanded.vchemfuele</li>
+    <li>regrowth.botr.core</li>
+    <li>imranfish.xmlextensions</li>
   </loadAfter>
 </ModMetaData>
