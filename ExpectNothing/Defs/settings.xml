@@ -1,61 +1,135 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-    <XmlExtensions.SettingsMenuDef>
-        <defName>thePatchIsALie</defName>
-        <modId>zenlor.thepatchisalie</modId>
-        <label>The Patch is a Lie</label>
+  <XmlExtensions.SettingsMenuDef>
+    <defName>thePatchIsALie</defName>
+    <modId>zenlor.thepatchisalie</modId>
+    <label>The Patch is a Lie</label>
+    <settings>
+      <li Class="XmlExtensions.Setting.Text">
+        <text>Important: settings are applied during load. Restart the game when changing settings.</text>
+      </li>
+
+      <li Class="XmlExtensions.Setting.GapLine" />
+      <li Class="XmlExtensions.Setting.Text">
+        <text>Misc</text>
+      </li>
+      <li Class="XmlExtensions.Setting.Gap" />
+
+      <li Class="XmlExtensions.Setting.Section">
         <settings>
-            <li Class="XmlExtensions.Setting.Section">
+          <li Class="XmlExtensions.Setting.Slider">
+            <key>doorSpeed</key>
+            <label>Door Closing speed: {doorSpeed}</label>
+            <defaultValue>1.5</defaultValue>
+            <min>0.5</min>
+            <max>2.0</max>
+            <decimals>1</decimals>
+          </li>
 
-                <li Class="XmlExtensions.Setting.Section">
-                    <settings>
-                        <li Class="XmlExtensions.Setting.Text">
-                            <text>Misc</text>
-                        </li>
+          <li Class="XmlExtensions.Setting.Slider">
+            <key>floorCost</key>
+            <label>Floor cost: {floorCost}$</label>
+            <defaultValue>1</defaultValue>
+            <min>0.1</min>
+            <max>4.0</max>
+            <decimals>1</decimals>
+          </li>
 
-                        <li Class="XmlExtensions.Setting.Slider">
-                            <key>doorSpeed</key>
-                            <label>Door Closing speed</label>
-                            <defaultValue>1.5</defaultValue>
-                            <min>0.1</min>
-                        </li>
-                    </settings>
-                </li>
-
-                <li Class="XmlExtensions.Setting.GapLine" />
-                <li Class="XmlExtensions.Setting.Section">
-                    <settings>
-                        <li Class="XmlExtensions.Setting.Text">
-                            <text>Ideology</text>
-                        </li>
-
-                        <li Class="XmlExtensions.Setting.Checkbox">
-                            <label>Conversion power</label>
-                            <key>ideologyConversion</key>
-                        </li>
-
-                        <li Class="XmlExtensions.Settings.Checkbox">
-                            <label>Conversion cooldown</label>
-                            <key>ideologyConversionCooldown</key>
-                        </li>
-
-                        <li Class="XmlExtensions.Settings.Checkbox">
-                            <label>Reassure power</label>
-                            <key>ideologyReassure</key>
-                        </li>
-                    </settings>
-                </li>
-
-                <li Class="XmlExtensions.Setting.GapLine" />
-                <li Class="XmlExtensions.Setting.Section">
-                    <settings>
-                        <li Class="XmlExtensions.Setting.Text">
-                            <text>Pawn Expectations</text>
-                        </li>
-                    </settings>
-                </li>
-
-            </li>
         </settings>
-    </XmlExtensions.SettingsMenuDef>
+      </li>
+
+      <li Class="XmlExtensions.Setting.GapLine" />
+      <li Class="XmlExtensions.Setting.Text">
+        <text>Ideology</text>
+      </li>
+      <li Class="XmlExtensions.Setting.Gap" />
+
+      <li Class="XmlExtensions.Setting.Section">
+        <settings>
+          <li Class="XmlExtensions.Setting.Text">
+            <text>Role ability cooldown</text>
+          </li>
+
+          <li Class="XmlExtensions.Setting.Slider">
+            <label>Leader: {ideologyAbilityCooldownLeader} (default: 1)</label>
+            <key>ideologyAbilityCooldownLeader</key>
+            <defaultValue>1</defaultValue>
+            <min>0.1</min>
+            <max>2</max>
+            <decimals>1</decimals>
+          </li>
+
+          <li Class="XmlExtensions.Setting.Slider">
+            <label>Moral guide: {ideologyAbilityCooldownMoralist} (default: 1)</label>
+            <key>ideologyAbilityCooldownMoralist</key>
+            <defaultValue>1</defaultValue>
+            <min>0.1</min>
+            <max>2</max>
+            <decimals>1</decimals>
+          </li>
+
+          <li Class="XmlExtensions.Setting.Slider">
+            <label>Secondary roles: {ideologyAbilityCooldownMultiRole} (default: 1)</label>
+            <key>ideologyAbilityCooldownMultiRole</key>
+            <defaultValue>1</defaultValue>
+            <min>0.1</min>
+            <max>2</max>
+            <decimals>1</decimals>
+          </li>
+
+          <li Class="XmlExtensions.Setting.GapLine" />
+          <li Class="XmlExtensions.Setting.Text">
+            <text>Ritual conversion power</text>
+          </li>
+
+          <li Class="XmlExtensions.Setting.Slider">
+            <label>Conversion power multiplier</label>
+            <key>ideologyConversionPower</key>
+            <defaultValue>1</defaultValue>
+            <min>0.1</min>
+            <max>4</max>
+            <decimals>1</decimals>
+          </li>
+
+          <li Class="XmlExtensions.Setting.Slider">
+            <key>ideologyReassurePower</key>
+            <label>Reassure power multiplier: 0.2 * {ideologyReassurePower}</label>
+            <defaultValue>1</defaultValue>
+            <min>0.1</min>
+            <max>3</max>
+            <decimals>1</decimals>
+          </li>
+
+          <li Class="XmlExtensions.Setting.Slider">
+            <key>ideologyExpectationsOffset</key>
+            <label>Expectation increase for Ideology roles: {expectationsOffset} (default: 2)</label>
+            <defaultValue>2</defaultValue>
+            <min>0</min>
+            <max>3</max>
+            <decimals>0</decimals>
+          </li>
+
+          <li Class="XmlExtensions.Setting.GapLine" />
+          <li Class="XmlExtensions.Setting.Checkbox">
+            <key>roleWorkEnable</key>
+            <label>Enable Ideology roles to work on any job</label>
+            <defaultValue>false</defaultValue>
+          </li>
+
+        </settings>
+      </li>
+
+      <li Class="XmlExtensions.Setting.GapLine" />
+      <li Class="XmlExtensions.Setting.Text">
+        <text>Pawn Expectations</text>
+      </li>
+      <li Class="XmlExtensions.Setting.Gap" />
+
+      <li Class="XmlExtensions.Setting.Section">
+        <settings>
+
+        </settings>
+      </li>
+    </settings>
+  </XmlExtensions.SettingsMenuDef>
 </Defs>

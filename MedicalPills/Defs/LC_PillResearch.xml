@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ResearchProjectDef>
+		<defName>LC_PillResearch</defName>
+		<label>pills</label>
+		<description>Allows the creation of elaborate pills by combining herbal concoctions with neutroamine.</description>
+		<baseCost>1000</baseCost>
+		<prerequisites>
+             <li>DrugProduction</li>
+			 <li>TM_TribalMedicalHerbs</li>
+        </prerequisites>
+		<techLevel>Industrial</techLevel>
+		<researchViewX>4.00</researchViewX>
+		<researchViewY>4.95</researchViewY>
+	</ResearchProjectDef>
+	
+</Defs>

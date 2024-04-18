@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ResearchProjectDef[defName = "TM_TribalMedicalHerbs"]/baseCost</xpath>
+		<value>
+			<baseCost>2000</baseCost>
+		</value>
+	</Operation>
+	
+</Patch>

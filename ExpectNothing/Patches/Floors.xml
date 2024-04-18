@@ -1,32 +1,31 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 
-	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/TerrainDef[@Name="FloorBase" or
-								@Name="OutlandFloorBase" or
-								@Name="TFloorBaseWood" or
-								@Name="TFloorBaseCarpet" or
-								@Name="TFloorBaseStone"
-								]/statBases</xpath>
-		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/TerrainDef[@Name="FloorBase" or
-									@Name="OutlandFloorBase" or
-									@Name="TFloorBaseWood" or
-									@Name="TFloorBaseCarpet" or
-									@Name="TFloorBaseStone"]</xpath>
-			<value>
-				<statBases/>
-			</value>
-		</nomatch>
-	</Operation>
-	<Operation Class="PatchOperationAdd">
-		<xpath>/Defs/TerrainDef[@Name="FloorBase" or
-								@Name="OutlandFloorBase" or
-								@Name="TFloorBaseWood" or
-								@Name="TFloorBaseCarpet" or
-								@Name="TFloorBaseStone"]/statBases</xpath>
-		<value>
-			<MarketValue>0.01</MarketValue>
-		</value>
-	</Operation>
+  <Operation Class="XmlExtensions.UseSettings">
+    <modId>zenlor.thepatchisalie</modId>
+    <keys>
+      <li>floorCost</li>
+    </keys>
+    <defaultValues>
+      <li>0.5</li>
+    </defaultValues>
+    <apply>
+
+      <Operation Class="XmlExtensions.PatchOperationAddOrReplace">
+        <xpath>/Defs/TerrainDef[
+        @ParentName="FloorBase"
+        or @ParentName="OutlandFloorBase"
+        or @ParentName="TFloorBaseWood"
+        or @ParentName="TFloorBaseCarpet"
+        or @ParentName="TFloorBaseStone"
+        or @ParentName="NaturalTerrainBase"
+          ]/statBases</xpath>
+        <value>
+          <MarketValue>{floorCost}</MarketValue>
+        </value>
+      </Operation>
+
+    </apply>
+  </Operation>
+
 </Patch>
