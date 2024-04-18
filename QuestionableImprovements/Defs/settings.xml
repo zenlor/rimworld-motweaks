@@ -1,18 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <XmlExtensions.SettingsMenuDef>
-    <defName>thePatchIsALie</defName>
-    <modId>zenlor.thepatchisalie</modId>
-    <label>The Patch is a Lie</label>
+    <defName>QuestionableImprovements</defName>
+    <modId>zenlor.QuestionableImprovements</modId>
+    <label>Questionable Improvements</label>
     <settings>
+
       <li Class="XmlExtensions.Setting.Text">
         <text>Important: settings are applied during load. Restart the game when changing settings.</text>
       </li>
 
       <li Class="XmlExtensions.Setting.GapLine" />
+      <li Class="XmlExtensions.Setting.SetColor"><color>(79,204,62)</color></li>
       <li Class="XmlExtensions.Setting.Text">
-        <text>Misc</text>
+        <text>Basics</text>
+        <font>Medium</font>
+        <anchor>Middle</anchor>
       </li>
+      <li Class="XmlExtensions.Setting.SetColor" />
       <li Class="XmlExtensions.Setting.Gap" />
 
       <li Class="XmlExtensions.Setting.Section">
@@ -35,13 +40,23 @@
             <decimals>1</decimals>
           </li>
 
+          <li Class="XmlExtensions.Setting.Checkbox">
+            <key>basicsPackedDirt</key>
+            <label>Buildable packed dirt</label>
+            <defaultValue>false</defaultValue>
+          </li>
+
         </settings>
       </li>
 
       <li Class="XmlExtensions.Setting.GapLine" />
+      <li Class="XmlExtensions.Setting.SetColor"><color>(79,204,62)</color></li>
       <li Class="XmlExtensions.Setting.Text">
         <text>Ideology</text>
+        <font>Medium</font>
+        <anchor>Middle</anchor>
       </li>
+      <li Class="XmlExtensions.Setting.SetColor" />
       <li Class="XmlExtensions.Setting.Gap" />
 
       <li Class="XmlExtensions.Setting.Section">
@@ -120,16 +135,25 @@
       </li>
 
       <li Class="XmlExtensions.Setting.GapLine" />
+      <li Class="XmlExtensions.Setting.SetColor"><color>(79,204,62)</color></li>
       <li Class="XmlExtensions.Setting.Text">
-        <text>Pawn Expectations</text>
+        <text>Royalty</text>
+        <font>Medium</font>
+        <anchor>Middle</anchor>
       </li>
+      <li Class="XmlExtensions.Setting.SetColor" />
       <li Class="XmlExtensions.Setting.Gap" />
 
       <li Class="XmlExtensions.Setting.Section">
         <settings>
-
+          <li Class="XmlExtensions.Setting.Checkbox">
+            <key>royaltyBuyablePsylink</key>
+            <label>Buyable Psylink</label>
+            <defaultValue>true</defaultValue>
+          </li>
         </settings>
       </li>
+
     </settings>
   </XmlExtensions.SettingsMenuDef>
 </Defs>

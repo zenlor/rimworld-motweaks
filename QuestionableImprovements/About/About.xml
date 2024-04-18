@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-  <name>The patch is a lie</name>
+  <name>Questionable Improvements</name>
   <author>Zenlor</author>
-  <packageId>zenlor.thepatchisalie</packageId>
+  <packageId>zenlor.QuestionableImprovements</packageId>
   <description><![CDATA[
     Configurable patches for:
 

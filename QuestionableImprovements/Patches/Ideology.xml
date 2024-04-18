@@ -2,7 +2,7 @@
 <Patch>
 
   <Operation MayRequire="ludeon.Ideology" Class="XmlExtensions.UseSettings">
-    <modId>zenlor.thepatchisalie</modId>
+    <modId>zenlor.QuestionableImprovements</modId>
     <keys>
       <li>ideologyConversionPower</li>
       <li>ideologyReassurePower</li>

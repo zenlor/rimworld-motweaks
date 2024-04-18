@@ -9,7 +9,7 @@
     https://github.com/zenlor/rimworld-motweaks Released under MIT license
   </description>
   <supportedVersions>
-    <li>1.4</li>
+    <li>1.5</li>
   </supportedVersions>
   <loadAfter>
     <li>Ludeon.RimWorld</li>
