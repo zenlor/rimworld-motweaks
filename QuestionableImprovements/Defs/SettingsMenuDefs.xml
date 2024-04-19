@@ -10,33 +10,47 @@
         <text>Important: settings are applied during load. Restart the game when changing settings.</text>
       </li>
 
-      <li Class="XmlExtensions.Setting.GapLine" />
+      <li Class="XmlExtensions.Setting.GapLine"/>
       <li Class="XmlExtensions.Setting.SetColor"><color>(79,204,62)</color></li>
       <li Class="XmlExtensions.Setting.Text">
         <text>Basics</text>
         <font>Medium</font>
         <anchor>Middle</anchor>
       </li>
-      <li Class="XmlExtensions.Setting.SetColor" />
-      <li Class="XmlExtensions.Setting.Gap" />
+      <li Class="XmlExtensions.Setting.SetColor"/>
+      <li Class="XmlExtensions.Setting.Gap"/>
 
       <li Class="XmlExtensions.Setting.Section">
         <settings>
+          <li Class="XmlExtensions.Setting.Checkbox">
+            <key>basicsDoorSpeedEnabled</key>
+            <label>Manual Door closing speed</label>
+            <tooltip>Set closing speed for manual doors</tooltip>
+          </li>
           <li Class="XmlExtensions.Setting.Slider">
-            <key>doorSpeed</key>
-            <label>Door Closing speed: {doorSpeed}</label>
-            <defaultValue>1.5</defaultValue>
+            <key>basicsDoorSpeedAnimalFlap</key>
+            <label>Animal Flap: {doorSpeed}</label>
+            <defaultValue>2</defaultValue>
             <min>0.5</min>
-            <max>2.0</max>
+            <max>3.0</max>
             <decimals>1</decimals>
           </li>
 
+          <li Class="XmlExtensions.Setting.Gap"/>
+
+          <li Class="XmlExtensions.Setting.Checkbox">
+            <key>basicsFloorCostEnabled</key>
+            <label>Adjust floor cost</label>
+            <tooltip>NOTE: This will forcibly overwrite any floor market value</tooltip>
+            <defaultValue>false</defaultValue>
+          </li>
+
           <li Class="XmlExtensions.Setting.Slider">
-            <key>floorCost</key>
-            <label>Floor cost: {floorCost}$</label>
+            <key>basicsFloorCost</key>
+            <label>Fixed floor cost: {floorCost}$</label>
             <defaultValue>1</defaultValue>
-            <min>0.1</min>
-            <max>4.0</max>
+            <min>0</min>
+            <max>10</max>
             <decimals>1</decimals>
           </li>
 
@@ -49,15 +63,15 @@
         </settings>
       </li>
 
-      <li Class="XmlExtensions.Setting.GapLine" />
+      <li Class="XmlExtensions.Setting.GapLine"/>
       <li Class="XmlExtensions.Setting.SetColor"><color>(79,204,62)</color></li>
       <li Class="XmlExtensions.Setting.Text">
         <text>Ideology</text>
         <font>Medium</font>
         <anchor>Middle</anchor>
       </li>
-      <li Class="XmlExtensions.Setting.SetColor" />
-      <li Class="XmlExtensions.Setting.Gap" />
+      <li Class="XmlExtensions.Setting.SetColor"/>
+      <li Class="XmlExtensions.Setting.Gap"/>
 
       <li Class="XmlExtensions.Setting.Section">
         <settings>
@@ -65,8 +79,11 @@
             <text>Role ability cooldown</text>
           </li>
 
+          <li Class="XmlExtensions.Setting.Text">
+            <text>Leader: {ideologyAbilityCooldownLeader} (default: 1)</text>
+            <tooltip>Ideoligion Leader Cooldown multiplier. Eg: 0.5 will set the cooldown to half of the default value.</tooltip>
+          </li>
           <li Class="XmlExtensions.Setting.Slider">
-            <label>Leader: {ideologyAbilityCooldownLeader} (default: 1)</label>
             <key>ideologyAbilityCooldownLeader</key>
             <defaultValue>1</defaultValue>
             <min>0.1</min>
@@ -74,8 +91,11 @@
             <decimals>1</decimals>
           </li>
 
+          <li Class="XmlExtensions.Setting.Text">
+            <text>Moral guide: {ideologyAbilityCooldownMoralist} (default: 1)</text>
+            <tooltip>Ideoligion Moral Guide Cooldown multiplier. Eg: 0.5 will set the cooldown to half of the default value.</tooltip>
+          </li>
           <li Class="XmlExtensions.Setting.Slider">
-            <label>Moral guide: {ideologyAbilityCooldownMoralist} (default: 1)</label>
             <key>ideologyAbilityCooldownMoralist</key>
             <defaultValue>1</defaultValue>
             <min>0.1</min>
@@ -83,8 +103,11 @@
             <decimals>1</decimals>
           </li>
 
+          <li Class="XmlExtensions.Setting.Text">
+            <text>Secondary roles: {ideologyAbilityCooldownMultiRole} (default: 1)</text>
+            <tooltip>Ideoligion generic roles (eg: Production Specialist) Cooldown multiplier. Eg: 0.5 will set the cooldown to half of the default value.</tooltip>
+          </li>
           <li Class="XmlExtensions.Setting.Slider">
-            <label>Secondary roles: {ideologyAbilityCooldownMultiRole} (default: 1)</label>
             <key>ideologyAbilityCooldownMultiRole</key>
             <defaultValue>1</defaultValue>
             <min>0.1</min>
@@ -92,7 +115,7 @@
             <decimals>1</decimals>
           </li>
 
-          <li Class="XmlExtensions.Setting.GapLine" />
+          <li Class="XmlExtensions.Setting.GapLine"/>
           <li Class="XmlExtensions.Setting.Text">
             <text>Ritual conversion power</text>
           </li>
@@ -124,7 +147,7 @@
             <decimals>0</decimals>
           </li>
 
-          <li Class="XmlExtensions.Setting.GapLine" />
+          <li Class="XmlExtensions.Setting.GapLine"/>
           <li Class="XmlExtensions.Setting.Checkbox">
             <key>roleWorkEnable</key>
             <label>Enable Ideology roles to work on any job</label>
@@ -134,15 +157,15 @@
         </settings>
       </li>
 
-      <li Class="XmlExtensions.Setting.GapLine" />
+      <li Class="XmlExtensions.Setting.GapLine"/>
       <li Class="XmlExtensions.Setting.SetColor"><color>(79,204,62)</color></li>
       <li Class="XmlExtensions.Setting.Text">
         <text>Royalty</text>
         <font>Medium</font>
         <anchor>Middle</anchor>
       </li>
-      <li Class="XmlExtensions.Setting.SetColor" />
-      <li Class="XmlExtensions.Setting.Gap" />
+      <li Class="XmlExtensions.Setting.SetColor"/>
+      <li Class="XmlExtensions.Setting.Gap"/>
 
       <li Class="XmlExtensions.Setting.Section">
         <settings>
