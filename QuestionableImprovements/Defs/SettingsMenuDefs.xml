@@ -60,6 +60,12 @@
             <defaultValue>false</defaultValue>
           </li>
 
+          <li Class="XmlExtensions.Setting.Checkbox">
+            <key>basicsScavengeComponents</key>
+            <label>Scavenge Components at the machining table</label>
+            <defaultValue>true</defaultValue>
+          </li>
+
         </settings>
       </li>
 
