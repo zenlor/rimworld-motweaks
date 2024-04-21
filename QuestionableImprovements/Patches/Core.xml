@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
   <Operation Class="XmlExtensions.OptionalPatch">
+    <modId>zenlor.QuestionableImprovements</modId>
     <key>basicsDoorSpeedEnabled</key>
     <defaultValue>false</defaultValue>
     <caseTrue>
@@ -10,10 +11,12 @@
         <key>basicsDoorSpeedAnimalFlap</key>
         <defaultValue>1.5</defaultValue>
         <apply>
+
           <Operation Class="PatchOperationAdd">
             <xpath>/Defs/ThingDef[defName="AnimalFlap"]/statBases</xpath>
             <value><DoorOpenSpeed>{doorSpeed}</DoorOpenSpeed></value>
           </Operation>
+
         </apply>
       </Operation>
 
