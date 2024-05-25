@@ -235,7 +235,9 @@
       </li>
 
       <!-- Remove tabs -->
-      <li Class="PatchOperationRemove">
+      <li Class="PatchOperationSequence">
+        <operations>
+      <li Class="PatchOperationAdd">
         <success>Always</success>
         <xpath>Defs/ResearchTabDef[
         not(defName="Main") and
@@ -247,7 +249,13 @@
         not(defName="SRT_SpacerResearch") and
         not(defName="SRT_UltraResearch") and
         not(defName="Anomaly")
-          ]</xpath>
+		]</xpath>
+	<value>
+		<visibleByDefault>false</visibleByDefault>
+		<minMonolythLevelVisible>999</minMonolythLevelVisible>
+	</value>
+      </li>
+      </operations>
       </li>
 
       <!-- Schematics (books) -->

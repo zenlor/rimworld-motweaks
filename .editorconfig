@@ -8,10 +8,6 @@ insert_new_line = true
 indent_style = tab
 indent_size = 8
 
-[*.xml]
-indent_style = space
-indent_size = 2
-
-[flake.nix]
+[*.xml,*.cs,flake.nix]
 indent_style = space
 indent_size = 2

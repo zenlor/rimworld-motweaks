@@ -10,9 +10,21 @@
     flakelight ./. {
       inherit inputs;
 
-      devShell.packages = pkgs: [
-        pkgs.libxml2
+      devShell.packages = pkgs: with pkgs;[
+        libxml2
+        lemminx # lsp
+
+        # mono stuff
+        ilspycmd
+        avalonia-ilspy
+        msbuild
+        mono
+	omnisharp-roslyn # lsp
+	dotnet-sdk
       ];
+      devShell.env= pkgs: {
+	      DOTNET_ROOT = "${pkgs.dotnet-sdk}";
+	};
     };
 }
 
