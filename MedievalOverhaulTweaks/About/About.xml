@@ -4,13 +4,14 @@
   <name>Medieval Overhaul Tweaks</name>
   <author>zenlor</author>
   <description>
-Small tweaks to Medieval Overhaul and related mods
+    Small tweaks to Medieval Overhaul and related mods
 
-https://github.com/zenlor/rimworld-motweaks Released under MIT license
+    https://github.com/zenlor/rimworld-motweaks Released under MIT license
   </description>
   <supportedVersions>
     <li>1.3</li>
     <li>1.4</li>
+    <li>1.5</li>
   </supportedVersions>
   <loadAfter>
     <li>Ludeon.RimWorld</li>
@@ -35,8 +36,6 @@ https://github.com/zenlor/rimworld-motweaks Released under MIT license
     <li>notfood.mendandrecycle</li>
     <li>JKN.AdobeAbode</li>
     <li>zal.advanceddeepdrill</li>
-    <li>sugarstar.wheelchairs</li>
-    <li>pearasect.wheelchairs</li>
   </loadAfter>
   <loadBefore>
     <li>Ogam.Rimedieval</li>
@@ -46,6 +45,12 @@ https://github.com/zenlor/rimworld-motweaks Released under MIT license
       <packageId>OskarPotocki.VanillaFactionsExpanded.Core</packageId>
       <displayName>Vanilla Expanded Framework</displayName>
       <steamWorkshopUrl>steam://url/CommunityFilePage/2023507013</steamWorkshopUrl>
+    </li>
+    <li>
+      <packageId>imranfish.xmlextensions</packageId>
+      <displayName>XML Extensions</displayName>
+      <downloadUrl>https://github.com/15adhami/XmlExtensions/releases</downloadUrl>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/2574315206</steamWorkshopUrl>
     </li>
   </modDependencies>
 </ModMetaData>

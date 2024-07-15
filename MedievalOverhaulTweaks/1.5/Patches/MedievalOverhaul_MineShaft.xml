@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
-  <Operation Class="XmlExtensions.FindMod">
+  <Operation MayRequire="DankPyon.Medieval.Overhaul" Class="XmlExtensions.FindMod">
     <mods>
       <li>Medieval Overhaul</li>
     </mods>
@@ -12,7 +12,7 @@
         <defaultValue>true</defaultValue>
         <caseTrue>
 
-          <li Class="XmlExtensions.UseSettings">
+          <li Class="XmlExtensions.UseSetting">
             <modId>zenlor.MOTweaks</modId>
             <key>mot-mineshaft-gems-work</key>
             <defaultValue>1600</defaultValue>
