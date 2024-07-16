@@ -7,24 +7,25 @@
   };
 
   outputs = { self, flakelight, ... }@inputs:
-    flakelight ./. {
-      inherit inputs;
+    flakelight ./. ({ lib,...}:{
+        inherit inputs;
+        systems = lib.systems.flakeExposed;
 
-      devShell.packages = pkgs: with pkgs;[
-        libxml2
-        lemminx # lsp
+        devShell.packages = pkgs: with pkgs;[
+          libxml2
+          lemminx # lsp
 
-        # mono stuff
-        ilspycmd
-        avalonia-ilspy
-        msbuild
-        mono
-	omnisharp-roslyn # lsp
-	dotnet-sdk
-      ];
-      devShell.env= pkgs: {
-	      DOTNET_ROOT = "${pkgs.dotnet-sdk}";
-	};
-    };
+          # mono stuff
+          ilspycmd
+          avalonia-ilspy
+          msbuild
+          mono
+          omnisharp-roslyn # lsp
+          dotnet-sdk
+          ];
+          devShell.env= pkgs: {
+          DOTNET_ROOT = "${pkgs.dotnet-sdk}";
+        };
+    });
 }
 
