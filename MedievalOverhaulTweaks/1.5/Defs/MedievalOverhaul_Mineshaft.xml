@@ -74,7 +74,7 @@
     <label>mine a jade</label>
     <jobString>Mining 1 jade.</jobString>
     <products>
-      <jade>1</jade>
+      <Jade>1</Jade>
     </products>
   </RecipeDef>
 
