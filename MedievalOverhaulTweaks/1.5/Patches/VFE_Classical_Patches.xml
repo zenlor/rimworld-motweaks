@@ -12,7 +12,6 @@
       <li Class="XmlExtensions.OptionalPatch">
         <modId>zenlor.MOTweaks</modId>
         <key>mot-integration-vfeclassical</key>
-        <tag>mot-integration-vfeclassical</tag>
         <defaultValue>True</defaultValue>
         <caseTrue>
 
