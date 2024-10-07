@@ -5,21 +5,19 @@
     <key>basicsDoorSpeedEnabled</key>
     <defaultValue>false</defaultValue>
     <caseTrue>
-
       <Operation Class="XmlExtensions.UseSetting">
         <modId>zenlor.QuestionableImprovements</modId>
         <key>basicsDoorSpeedAnimalFlap</key>
         <defaultValue>1.5</defaultValue>
         <apply>
-
           <Operation Class="PatchOperationAdd">
             <xpath>/Defs/ThingDef[defName="AnimalFlap"]/statBases</xpath>
-            <value><DoorOpenSpeed>{doorSpeed}</DoorOpenSpeed></value>
+            <value>
+              <DoorOpenSpeed>{basicsDoorSpeedAnimalFlap}</DoorOpenSpeed>
+            </value>
           </Operation>
-
         </apply>
       </Operation>
-
     </caseTrue>
   </Operation>
 </Patch>

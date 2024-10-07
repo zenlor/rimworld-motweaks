@@ -20,7 +20,8 @@
   <loadAfter>
     <li>VanillaExpanded.VMemesE</li>
     <li>OskarPotocki.VanillaFactionsExpanded.Core</li>
-    <li>OskarPotocki.VFE.Tribals</li>
+    <li>OskarPotocki.vfe.tribals</li>
+    <li>OskarPotocki.vfe.empire</li>
     <li>OskarPotocki.VWEMS</li>
     <li>vanillaexpanded.vfepropsanddecor</li>
     <li>vanillaexpanded.vcef</li>
