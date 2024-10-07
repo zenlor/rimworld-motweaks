@@ -2,19 +2,17 @@
 <Patch>
   <Operation Class="PatchOperationSequence">
     <operations>
-
       <!-- add everything without techLevel to tab Main -->
       <li Class="PatchOperationAdd">
         <xpath>Defs/ResearchProjectDef[
         not(techLevel)
         and not(@Abstract="True")
         and not(tab="Anomaly")
-          ]</xpath>
+        ]</xpath>
         <value>
           <tab>Main</tab>
         </value>
       </li>
-
       <!-- Neolithic -->
       <li Class="PatchOperationSequence">
         <success>Always</success>
@@ -23,28 +21,25 @@
             <xpath>Defs/ResearchProjectDef[
             techLevel="Neolithic"
             and not(tab="Anomaly")
-              ]/tab</xpath>
+            ]/tab</xpath>
             <match Class="PatchOperationRemove">
               <xpath>Defs/ResearchProjectDef[
               techLevel="Neolithic"
               and not(tab="Anomaly")
-                ]/tab</xpath>
+              ]/tab</xpath>
             </match>
           </li>
-
           <li Class="PatchOperationAdd">
             <xpath>Defs/ResearchProjectDef[
             techLevel="Neolithic"
             and not(tab="Anomaly")
-              ]</xpath>
+            ]</xpath>
             <value>
               <tab>SRT_NeolithicResearch</tab>
             </value>
           </li>
         </operations>
       </li>
-
-
       <!-- Medieval -->
       <li Class="PatchOperationSequence">
         <success>Always</success>
@@ -53,47 +48,42 @@
             <xpath>Defs/ResearchProjectDef[
             techLevel="Medieval"
             and not(tab="Anomaly")
-              ]/tab</xpath>
+            ]/tab</xpath>
             <match Class="PatchOperationRemove">
               <xpath>Defs/ResearchProjectDef[
               techLevel="Medieval"
               and not(tab="Anomaly")
-                ]/tab</xpath>
+              ]/tab</xpath>
             </match>
           </li>
-
           <li Class="PatchOperationAdd">
             <xpath>Defs/ResearchProjectDef[
             techLevel="Medieval"
             and not(tab="Anomaly")
-              ]</xpath>
+            ]</xpath>
             <value>
               <tab>SRT_MedievalResearch</tab>
             </value>
           </li>
         </operations>
       </li>
-
-
       <!-- Industrial -->
       <li Class="PatchOperationSequence">
         <!-- <success>Always</success> -->
         <operations>
-
           <!-- Remove Tabs -->
           <li Class="PatchOperationConditional">
             <xpath>Defs/ResearchProjectDef[
             techLevel="Industrial"
             and not(tab="Anomaly")
-              ]/tab</xpath>
+            ]/tab</xpath>
             <match Class="PatchOperationRemove">
               <xpath>Defs/ResearchProjectDef[
               techLevel="Industrial"
               and not(tab="Anomaly")
-                ]/tab</xpath>
+              ]/tab</xpath>
             </match>
           </li>
-
           <!-- move Microelectronics to Hi-Tech (should help with the layout) -->
           <li Class="PatchOperationAdd">
             <xpath>Defs/ResearchProjectDef[defName="MicroelectronicsBasics"]</xpath>
@@ -101,7 +91,6 @@
               <tab>SRT_IndustrialResearchI</tab>
             </value>
           </li>
-
           <!-- move MultiAnalyzer to Silicon (should help with the layout) -->
           <li Class="PatchOperationAdd">
             <xpath>Defs/ResearchProjectDef[defName="MultiAnalyzer"]</xpath>
@@ -109,42 +98,38 @@
               <tab>SRT_IndustrialResearchII</tab>
             </value>
           </li>
-
           <li Class="PatchOperationAdd">
             <xpath>Defs/ResearchProjectDef[
             requiredResearchBuilding="HiTechResearchBench" and
             requiredResearchFacilities/li="MultiAnalyzer" and
             not(tab="Anomaly")
-              ]</xpath>
+            ]</xpath>
             <value>
               <tab>SRT_IndustrialResearchII</tab>
             </value>
           </li>
-
           <li Class="PatchOperationAdd">
             <xpath>Defs/ResearchProjectDef[
             requiredResearchBuilding="HiTechResearchBench"
             and not(tab="Anomaly")
             and not(tab)
-              ]</xpath>
+            ]</xpath>
             <value>
               <tab>SRT_IndustrialResearchI</tab>
             </value>
           </li>
-
           <li Class="PatchOperationAdd">
             <xpath>Defs/ResearchProjectDef[
             techLevel="Industrial"
             and not(tab="Anomaly")
             and not(tab)
-              ]</xpath>
+            ]</xpath>
             <value>
               <tab>SRT_IndustrialResearch</tab>
             </value>
           </li>
         </operations>
       </li>
-
       <!-- Spacer -->
       <li Class="PatchOperationSequence">
         <success>Always</success>
@@ -153,64 +138,60 @@
             <xpath>Defs/ResearchProjectDef[
             techLevel="Spacer"
             and not(tab="Anomaly")
-              ]/tab</xpath>
+            ]/tab</xpath>
             <match Class="PatchOperationRemove">
               <xpath>Defs/ResearchProjectDef[
               techLevel="Spacer"
               and not(tab="Anomaly")
-                ]/tab</xpath>
+              ]/tab</xpath>
             </match>
           </li>
-
           <li Class="PatchOperationAdd">
             <xpath>Defs/ResearchProjectDef[
             techLevel="Spacer"
             and not(tab="Anomaly")
-              ]</xpath>
+            ]</xpath>
             <value>
               <tab>SRT_SpacerResearch</tab>
             </value>
           </li>
         </operations>
       </li>
-
       <!-- Ultra -->
       <li Class="PatchOperationSequence">
         <success>Always</success>
         <operations>
           <li Class="PatchOperationConditional">
             <xpath>Defs/ResearchProjectDef[
-            techLevel="Ultra"
+            techLevel="Ultra" or techLevel="ultra"
             and not(tab="Anomaly")
-              ]/tab</xpath>
+            ]/tab</xpath>
             <match Class="PatchOperationRemove">
               <xpath>Defs/ResearchProjectDef[
-              techLevel="Ultra"
+              techLevel="Ultra" or techLevel="ultra"
               and not(tab="Anomaly")
-                ]/tab</xpath>
+              ]/tab</xpath>
             </match>
           </li>
-
           <li Class="PatchOperationAdd">
             <xpath>Defs/ResearchProjectDef[
-            techLevel="Ultra"
+            techLevel="Ultra" or techLevel="ultra"
             and not(tab="Anomaly")
-              ]</xpath>
+            ]</xpath>
             <value>
               <tab>SRT_UltraResearch</tab>
             </value>
           </li>
         </operations>
       </li>
-
       <!--
-        Expansions
+          Expansions
       -->
       <li Class="PatchOperationReplace" MayRequire="ludeon.rimworld.biotech">
         <xpath>Defs/ResearchProjectDef[
         @ParentName="MechtechBase"
         and not(tab="Anomaly")
-          ]/tab</xpath>
+        ]/tab</xpath>
         <value>
           <tab>SRT_IndustrialResearch</tab>
         </value>
@@ -219,7 +200,7 @@
         <xpath>Defs/ResearchProjectDef[
         @ParentName="BaseBodyPartEmpire_TierA"
         and not(@Abstract="True")
-          ]/tab</xpath>
+        ]/tab</xpath>
         <value>
           <tab>SRT_SpacerResearch</tab>
         </value>
@@ -228,36 +209,30 @@
         <xpath>Defs/ResearchProjectDef[
         @ParentName="BaseBodyPartEmpire_TierB"
         and not(@Abstract="True")
-          ]/tab</xpath>
+        ]/tab</xpath>
         <value>
           <tab>SRT_UltraResearch</tab>
         </value>
       </li>
-
       <!-- Remove tabs -->
       <li Class="PatchOperationSequence">
         <operations>
-      <li Class="PatchOperationAdd">
-        <success>Always</success>
-        <xpath>Defs/ResearchTabDef[
-        not(defName="Main") and
-        not(defName="SRT_NeolithicResearch") and
-        not(defName="SRT_MedievalResearch") and
-        not(defName="SRT_IndustrialResearch") and
-        not(defName="SRT_IndustrialResearchI") and
-        not(defName="SRT_IndustrialResearchII") and
-        not(defName="SRT_SpacerResearch") and
-        not(defName="SRT_UltraResearch") and
-        not(defName="Anomaly")
-		]</xpath>
-	<value>
-		<visibleByDefault>false</visibleByDefault>
-		<minMonolythLevelVisible>999</minMonolythLevelVisible>
-	</value>
+          <li Class="PatchOperationRemove">
+            <success>Always</success>
+            <xpath>Defs/ResearchTabDef[
+            not(defName="Main") and
+            not(defName="SRT_NeolithicResearch") and
+            not(defName="SRT_MedievalResearch") and
+            not(defName="SRT_IndustrialResearch") and
+            not(defName="SRT_IndustrialResearchI") and
+            not(defName="SRT_IndustrialResearchII") and
+            not(defName="SRT_SpacerResearch") and
+            not(defName="SRT_UltraResearch") and
+            not(defName="Anomaly")
+            ]</xpath>
+          </li>
+        </operations>
       </li>
-      </operations>
-      </li>
-
       <!-- Schematics (books) -->
       <li Class="PatchOperationSequence">
         <operations>
@@ -268,21 +243,19 @@
             <xpath>/Defs/ThingDef[defName="Schematic"]/comps/li[@Class="CompProperties_Book"]/doers/li[@Class="BookOutcomeProperties_GainResearch"]</xpath>
             <value>
               <tabs>
-                <Main />
-                <SRT_NeolithicResearch />
-                <SRT_MedievalResearch />
-                <SRT_IndustrialResearch />
-                <SRT_IndustrialResearchI />
-                <SRT_IndustrialResearchII />
-                <SRT_SpacerResearch />
-                <SRT_UltraResearch />
+                <Main/>
+                <SRT_NeolithicResearch/>
+                <SRT_MedievalResearch/>
+                <SRT_IndustrialResearch/>
+                <SRT_IndustrialResearchI/>
+                <SRT_IndustrialResearchII/>
+                <SRT_SpacerResearch/>
+                <SRT_UltraResearch/>
               </tabs>
             </value>
           </li>
         </operations>
       </li>
-
     </operations>
   </Operation>
 </Patch>
-

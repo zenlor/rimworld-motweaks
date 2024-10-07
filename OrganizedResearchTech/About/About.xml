@@ -16,14 +16,16 @@ Split research by tech level.
   </supportedVersions>
   <loadAfter>
     <li>Mlie.OrganizedResearchTab</li>
-    <li>VanillaExpanded.VMemesE</li>
-    <li>OskarPotocki.VanillaFactionsExpanded.Core</li>
     <li>OskarPotocki.VFE.Tribals</li>
     <li>OskarPotocki.VWEMS</li>
-    <li>vanillaexpanded.vfepropsanddecor</li>
+    <li>OskarPotocki.VanillaFactionsExpanded.Core</li>
+    <li>VanillaExpanded.VMemesE</li>
+    <li>imranfish.xmlextensions</li>
+    <li>kentington.saveourship2</li>
+    <li>regrowth.botr.core</li>
     <li>vanillaexpanded.vcef</li>
     <li>vanillaexpanded.vchemfuele</li>
-    <li>regrowth.botr.core</li>
-    <li>imranfish.xmlextensions</li>
+    <li>vanillaexpanded.vfepropsanddecor</li>
+    <li>hlx.UltratechAlteredCarbon</li>
   </loadAfter>
 </ModMetaData>
