@@ -329,7 +329,6 @@
       <li Class="XmlExtensions.OptionalPatch">
         <modId>zenlor.MOTweaks</modId>
         <key>mot-integration-vfetribal-research</key>
-        <tag>mot-integration-vfetribal</tag>
         <defaultValue>True</defaultValue>
         <caseTrue>
 

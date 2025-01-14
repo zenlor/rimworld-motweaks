@@ -56,25 +56,23 @@
           </li>
 
           <li Class="PatchOperationReplace">
-            <xpath>
-                /Defs/RecipeDef[defName="VFEC_Make_Bronze"]/ingredients/li/filter/thingDefs/li[text()="Steel"]</xpath>
-              <value>
-                <li>DankPyon_IronOre</li>
-              </value>
-            </li>
+            <xpath>/Defs/RecipeDef[defName="VFEC_Make_Bronze"]/ingredients/li/filter/thingDefs/li[text()="Steel"]</xpath>
+            <value>
+              <li>DankPyon_IronOre</li>
+            </value>
+          </li>
 
-            <li Class="PatchOperationReplace">
-              <xpath>
-                  /Defs/RecipeDef[defName="VFEC_Make_Bronze"]/fixedIngredientFilter/thingDefs/li[text()="Steel"]</xpath>
-                <value>
-                  <li>DankPyon_IronOre</li>
-                </value>
-              </li>
-
-            </caseTrue>
+          <li Class="PatchOperationReplace">
+            <xpath>/Defs/RecipeDef[defName="VFEC_Make_Bronze"]/fixedIngredientFilter/thingDefs/li[text()="Steel"]</xpath>
+            <value>
+              <li>DankPyon_IronOre</li>
+            </value>
           </li>
 
         </caseTrue>
-      </Operation>
+      </li>
 
-    </Patch>
+    </caseTrue>
+  </Operation>
+
+</Patch>

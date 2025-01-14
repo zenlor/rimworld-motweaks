@@ -273,7 +273,6 @@
       <!-- Dubs Bad Hygiene -->
       <li Class="XmlExtensions.Setting.Gap" />
       <li Class="XmlExtensions.Setting.Section">
-        <tag>mot-integration-dbh</tag>
         <settings>
           <li Class="XmlExtensions.Setting.Text">
             <text>Dubs Bad Hygiene</text>
@@ -312,7 +311,6 @@
       <!-- GarlicSauce's Advanced Deep Drill -->
       <li Class="XmlExtensions.Setting.Gap" />
       <li Class="XmlExtensions.Setting.Section">
-        <tag>mot-integration-advdeepdrill</tag>
         <settings>
 
           <li Class="XmlExtensions.Setting.Text">

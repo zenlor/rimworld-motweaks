@@ -133,7 +133,6 @@
       <li Class="XmlExtensions.OptionalPatch">
         <modId>zenlor.MOTweaks</modId>
         <key>mot-integration-advdeepdrill-ore</key>
-        <tag>mot-integration-advdeepdrill</tag>
         <defaultValue>True</defaultValue>
         <caseTrue>
 
